@@ -1,0 +1,53 @@
+        <section class="contenido wrapper">
+            <div class="list-exploits">
+                <h2><?php echo $name ?></h2>
+                <h1>List exploits:</h1>
+                <div class="list-exp">
+                    <ul id="ul" class="head">
+                    <?php
+                    $conn = pg_connect("host=localhost dbname=SSL_ANALYZER user=alumnodb password=alumnodb") or die('No pudo conectarse: ' . pg_last_error());
+
+                      //Check if the name exist
+                      $consulta = "SELECT * FROM exploit WHERE status = '1' AND name = '" . $name . "';";
+                      $resultado = pg_query($conn, $consulta) or die('Error: SQL --> ' . pg_last_error());
+                      $i = 0;
+                      while ($row = pg_fetch_row($resultado, null, PGSQL_ASSOC)) {
+                      echo '<li id="li' . $i . '"><a href="#" onclick="infoExploit(' . $i . ')">' . $row["name"] . '</a></li>';
+                      $i++;
+                      }
+                    ?>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="list-exploits pass">
+                <h2>Change password:</h2>
+                <div id="tab1" class="form-content tab1 active">
+                    <div class="wrap">
+                        <form id="form1" action="" class="form" name="form_register" method="post">
+                            <div>
+                                <div class="input-group">
+                                    <input type="password" id="passold" name="passold" required=”required”>
+                                    <label class="label" for="passold">Old password:</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" id="pass" name="pass" required=”required”>
+                                    <label class="label" for="pass">New password:</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" id="pass1" name="pass1" required=”required”>
+                                    <label class="label" for="pass1">Confirm the new password:</label>
+                                </div>
+                                <input type="submit" id="btn-submit" value="Send" onsubmit="login();
+                                        return false;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+
+
+        </section>

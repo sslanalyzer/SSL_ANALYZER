@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> 
+        <meta charset="UTF-8">
+        <title>SSL Analyzer</title> 
+        <link rel="shorcut icon" href="fonts/logo.png">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/exploits.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+        <script src="js/up.js" type="text/javascript"></script>
+        <script src="js/header.js" type="text/javascript"></script>
+        <script src="js/statistics.js" type="text/javascript"></script>
+        <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+        <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+        <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    </head>
+
+    <body> 
+        <header class="header2">
+            <div class="wrapper">
+                <div class="logo">
+                    <div><img src="fonts/logo7.png" width="80px"; height="85px";>
+                        SSL Analyzer</div></div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="login.html">Login</a>
+                    <a href="exploits.html">Exploits</a>
+                    <a class="active" href="statistics.html">Statistics</a>
+                </nav>
+            </div>
+        </header>
+
+        <span class="up">
+            <img src="fonts/arrow_up.png" width="35px" height="35px">
+        </span>
+        <section class="contenido wrapper">
+            <div class="list-exploits">
+                <h3 class="error_title">Error</h3>
+                <h2>Statistics list:</h2>
+                <div class="list-exp">
+                    <ul id="ul" class="head">
+                        <!--<li id="li1" ><a href="#">BEAST attack</a></li>
+                        <li id="li2" ><a href="#">POODLE (SSLv3)</a></li>
+                        <li id="li3" ><a href="#">POODLE (TLS)</a></li>
+                        <li id="li4" ><a href="#">Downgrade attack prevention</a></li>
+                        <li id="li5" ><a href="#">SSL/TLS compression</a></li>
+                        <li id="li6" ><a href="#">RC4</a></li>
+                        <li id="li7" ><a href="#">Heartbeat (extension)</a></li>
+                        <li id="li8" ><a href="#">Heartbleed (vulnerability)</a></li>
+                        <li id="li9" ><a href="#">Forward Secrecy</a></li>
+                        <li id="li1" ><a href="#">BEAST attack</a></li>
+                        <li id="li2" ><a href="#">POODLE (SSLv3)</a></li>
+                        <li id="li3" ><a href="#">POODLE (TLS)</a></li>
+                        <li id="li4" ><a href="#">Downgrade attack prevention</a></li>
+                        <li id="li5" ><a href="#">SSL/TLS compression</a></li>
+                        <li id="li6" ><a href="#">RC4</a></li>
+                        <li id="li7" ><a href="#">Heartbeat (extension)</a></li>
+                        <li id="li8" ><a href="#">Heartbleed (vulnerability)</a></li>
+                        <li id="li9" ><a href="#">Forward Secrecy</a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="new-exploit">
+                <div class="btn-exploit">
+                    <input type="submit" id="btn-submit" value="Show all statistics" onclick="allStadistics();
+                            return false;">
+                </div>
+            </div>
+            <div class="separator" style="width: 100%; height: 180px;"></div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer-fn">
+                <p>All rights reserved &copy; 2016. Designed By <a href="#">Iago Sánchez</a></p>
+            </div>
+        </footer>
+    </body>
+
+</html>

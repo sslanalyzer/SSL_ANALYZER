@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>SSL Analyzer</title>
+        <link rel="shorcut icon" href="fonts/logo.png">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+        <script src="js/header.js" type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header class="header2">
+            <div class="wrapper">
+                <div class="logo">
+                    <div><img src="fonts/logo7.png" width="80px"; height="85px";>
+                    SSL Analyzer</div></div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a class="active" href="login.html">Login</a>
+                    <a href="exploits.html">Exploits</a>
+                    <a href="statistics.html">Statistics</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="btn-login">
+            <ul id="ul" class="head">
+                <li id="li_tab1" class="active" data-target="tab1">Login</li>
+                <li id="li_tab2" data-target="tab2">Register</li>
+                <li id="li_tab3" class="tab3" data-target="tab3">Forgotten password?</li>
+            </ul>
+        </div>
+        <div class="login-wrap">
+            <section>
+
+                <div id="tab1" class="form-content tab1 active">
+                    <h3 class="error_title">Error</h3>
+                    <div class="wrap">
+                        <form id="form1" action="" class="form" name="form_register" method="post">
+                            <div>
+                                <div class="input-group">
+                                    <input type="text" id="name" name="name" required=”required”>
+                                    <label class="label" for="name">Name:</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" id="pass" name="pass" required=”required”>
+                                    <label class="label" for="pass">Password:</label>
+                                </div>
+                                <input type="submit" id="btn-submit" value="Send" onsubmit="login();
+                                        return false;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="tab2" class="form-content tab2" style="display: none;">
+                    <h3 class="error_title">Error</h3>
+                    <div class="wrap">
+                        <form id="form2" action="" class="form" name="form_register" method="post">
+                            <div>
+                                <div class="input-group">
+                                    <input type="text" id="name1" name="name1" required=”required”>
+                                    <label class="label" for="name1">Name:</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="email" name="email" required=”required”>
+                                    <label class="label" for="email">Email:</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" id="pass1" name="pass1" required=”required”>
+                                    <label class="label" for="pass1">Password:</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" id="pass2" name="pass2" required=”required”>
+                                    <label class="label" for="pass2">Confirm password:</label>
+                                </div>
+                                <div class="input-group checkbox">
+                                    <input type="checkbox" name="terms" id="terms" value="true" >
+                                    <label for="terms">Confirm terms</label>
+                                    <a class="link" onclick="getTerms();
+                                        return false;">Click here to know the terms</a>
+                                </div>
+                                <input type="submit" id="btn-submit" value="Send" onsubmit="register();
+                                        return false;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="tab3" class="form-content tab3" style="display: none;">
+                    <h3 class="error_title">Error</h3>
+                    <div class="wrap">
+                        <form id="form3" action="email.php" class="form" name="form_register" method="post">
+                            <div>
+                                <div class="input-group">
+                                    <input type="email" id="email1" name="email1" required=”required”>
+                                    <label class="label" for="email1">Email:</label>
+                                </div>
+                                <input type="submit" id="btn-submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/login.js" type="text/javascript"></script>
+        <footer class="footer">
+            <div class="emergent" style="display: none;">
+
+                <div>
+                    <span class="close" title="Cerrar">
+                        <img class="cross" src="fonts/cross.png" alt="Close" onclick="close_aside();
+                                        return false;">
+                    </span>
+                </div>
+                <h1>Terms and conditions</h1><br>
+                A continuación se muestran las condiciones y terminos de esta página.
+                Como se puede comprobar bla bla bla bla bla  bla bla bla bla bla  bla bla bla bla bla
+                bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+                bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+
+
+            </div>
+            <div class="footer-fn">
+                <p>All rights reserved &copy; 2016. Designed By <a href="#">Iago Sánchez</a></p>
+            </div>
+        </footer>
+    </body>
+
+</html>
