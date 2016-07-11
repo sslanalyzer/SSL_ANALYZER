@@ -7,4 +7,6 @@ This web tool makes easy th information of the SSL layer supplies by one IP, dom
         the users of the tool, bringing in this way, additional information for the study of the security in website.<br><br>
         
         
+To get all the exploits, the admin user or to any question, please contact with: <a>iago.sanchezorieto@gmail.com</a>
+        
 For more information go to: <a>https://drive.google.com/open?id=0B0dxfWVRK5KIcG9RbWJyemhObTA</a>
