@@ -1,0 +1,109 @@
+/* HEADER */
+
+header {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgb(66, 75, 244);
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+header.header2 {}
+
+header nav {
+    float:right;
+    line-height: 150px;
+}
+
+header .logo {
+    color: #f2f2f2;
+    font-size: 50px;
+    line-height: 150px;
+    float:left;
+}
+div.logo img{
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+
+header nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 120%;
+    font-weight: bold;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all500ms ease;
+    border-radius: 50px;
+}
+
+header nav a:hover, header nav a.active{
+    background: rgb(42, 47, 139);
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    min-width: 320px;
+    min-height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* FOR TABLETS OR SMALL LAPTOPS */
+@media screen and (max-width: 880px) {
+    header .logo,
+    header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    header nav a {
+        font-size: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    div.logo img{
+        width: 55px;
+        height: 60px;
+        margin-bottom: 1px;
+    }
+
+    header .logo,
+    header nav {
+        line-height: 50px;
+    }
+}
+
+/* FOR SMARTPHONES */
+@media screen and (max-width: 420px) {
+
+    header .logo,
+    header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 70px;
+    }	
+    header .logo {
+        font-size: 180%;
+    }
+    header nav a {
+        font-size: 60%;
+    }
+
+    div.logo img{
+        width: 35px;
+        height: 40px;
+        margin-bottom: -7px;
+    }
+}

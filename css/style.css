@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fffffa;
+}
+
+.wrapper2 {
+    width: 80%;
+    padding: 40px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
+}
+
+.title_one {
+    font-size: 300%;
+    color: rgb(66, 75, 244);
+    text-align: center;
+    border-bottom: solid;
+    font-style: italic;
+    padding-top: 180px;
+    padding-bottom: 20px;
+}
+
+.title_two{
+    text-align: center;
+    color: rgb(66, 75, 244);
+    padding-top: 180px;
+    padding-bottom: 20px;
+}
+
+.title_three {
+    font-size: 250%;
+    color: rgb(66, 75, 244);
+    padding-bottom: 40px;
+}
+
+.title_three.pass{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.title{
+    text-align: center;
+    color: rgb(66, 75, 244);
+    padding-bottom: 20px;
+}
+
+.error_title{
+    display:none;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.contenido p {
+    margin-bottom: 1em;
+}
+
+
+.wrap1{
+    width: 45%;
+    float: left;
+    max-width: 500px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
+}
+
+div#tab.ssl.wrap1{
+    width: 100%;
+    float: none;
+    max-width: 900px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
+}
+
+.wrap2{
+    width: 45%;
+    height: 431px;
+    float: right;
+    max-width: 500px;
+    padding: 40px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
+}
+/* Marker of the google map */
+div p{
+    color: rgb(0,0,0);
+}
+
+div.small{
+    font-size: 70%;
+    color: grey;
+}
+
+/* TAB OF IPS */
+table{
+    border-collapse:collapse;
+    width: 100%;
+    border: none;
+}
+
+th, td{
+    /*border: medium none;*/
+    text-align: left;
+    padding: 8px;
+    width: 100%;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.left.first, .right.first{
+    background-color:#424BF4;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.left.second, .right.second{
+    color:#424BF4;
+    /*background-color: rgb(255, 255, 255);*/
+    width: 0%;
+    font-weight: bold;
+}
+
+.left.second a, .right.second a{
+    text-decoration: none;
+}
+
+tr:nth-child(2n+1){
+    background-color:#E9E7E7;
+}
+
+/* LIST BEST */
+.list-best{
+    width: 100%;
+    color: #424BF4;
+    padding: 50px;
+    padding-top: 30px;
+    min-width: 320px;
+}
+
+.list-best h2{
+    text-align: center;
+    border-bottom: solid;
+    font-style: italic;
+    font-size: 400%;
+}
+
+
+/* LIST WORST */
+.list-worst{
+    width: 100%;
+    color: #424BF4;
+    padding: 50px;
+    padding-top: 70px;
+    min-width: 320px;
+}
+
+.list-worst h2{
+    text-align: center;
+    border-bottom: solid;
+    font-style: italic;
+    font-size: 400%;
+}
+
+/* BEST AND WORST CONTENT */
+.list-stats {
+    clear:both;
+    float:left;
+    overflow:hidden;
+    width:100%;
+    padding-top: 20px;
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -moz-column-fill: balance;
+    column-fill: balance;
+    break-inside: avoid-column;
+}
+.content{
+    padding-bottom: 90px;
+}
+
+.list-stats ul{
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.head-stats {
+    float:left;
+    left:50%;
+    list-style-type:none;
+    margin:0 auto;
+    padding:0;
+    position:relative;
+}
+
+.head-stats ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.head-stats ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.head-stats li {
+    clear:both;
+    padding-bottom: 30px;
+}
+
+.head-stats li a{
+    text-decoration:none;   
+    position:relative;
+    right:50%;
+    background-color: rgb(255,255,255);
+    color: rgb(16, 54, 189);
+    padding: 0px 15px;
+    cursor: pointer;
+    font-size: 80%;
+    border-radius: 30px;
+    font-weight: 300;
+    vertical-align: middle;
+    border: 3px solid rgb(16, 54, 189);
+    -webkit-transition: background-color .35s ease-in-out;
+    transition: background-color .35s ease-in-out;
+    -webkit-column-span: all; /* Chrome, Safari, Opera*/
+    column-span: all
+}
+
+.head-stats li a:hover, .head-stats li a.active{
+    background-color: rgb(66, 75, 244);
+    color: rgb(255, 255, 255);
+}
+
+/* ARROW TO GO UP */
+.up {
+    display: none;
+    padding:8px;
+    border-radius: 45px;
+    background: rgb(66, 75, 244);
+    font-size: 0%;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .head li a{
+        font-size: 80%;
+    }
+
+    .wrap1 {
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    div#tab.address.wrap1{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+
+    div#map{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+
+    .wrap1 {
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .list-best h2{
+        font-size: 350%;
+    }
+    .list-worst h2{
+        font-size: 350%;
+    }
+    .list-stats {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+    }
+    .head li a{
+        font-size: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 560px) {
+
+    .list-best h2{
+        font-size: 270%;
+    }
+    .list-worst h2{
+        font-size: 270%;
+    }
+    .list-stats {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+    .up img{
+        height: 15px;
+        width: 15px;
+    }
+
+    table{
+        font-size: 80%;
+        overflow-x: scroll;
+    }
+
+    .wrap.address{
+        padding:20px;
+    }
+
+}
+
+
+@media screen and (max-width: 430px) {
+
+    .help{
+        font-size: 60%;
+    }
+    input[type="submit"] {
+        font-size: 80%;
+    }
+    .wrap1 {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 368px) {
+
+    .list-worst h2{
+        font-size: 250%;
+    }
+}

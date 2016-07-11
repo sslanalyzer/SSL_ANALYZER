@@ -1,0 +1,143 @@
+/* FOOTER */
+footer{
+    min-width: 320px;
+}
+
+.footer{
+    padding: 15px;
+    padding-top: 15px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background: rgb(66, 75, 244);
+    color: white;
+    position: fixed;
+    float: none;
+    bottom: 0px;
+    right: 0px;
+    min-width: 320px;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.footer a{
+    min-width: 320px;
+    text-decoration:none;
+    color: #fffffa;
+}
+div.emergent{
+    width: 90%;
+    max-width: 800px;
+    padding: 40px;
+    margin: auto;
+    color:  rgb(66, 75, 244);
+    margin-top: -400px; 
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
+    z-index: 2;
+    min-width: 320px;
+}
+
+div.emergent.exploit{
+    text-align: left;
+    margin-top: -690px;
+}
+
+div.emergent.exploit h2{
+    text-align: center;
+    font-size: 300%;
+}
+
+aside{
+    min-width: 300px;
+    color: #303F9F;
+}
+
+aside p{
+    width:100%;
+    min-width: 320px;
+}
+
+span.close{
+    float: right;
+    z-index: 3; 
+    cursor: pointer;
+    margin-top: -25px;
+}
+
+img.cross{
+    background-color: rgb(66, 75, 244);
+    height:35px; 
+    width: 35px;
+}
+
+
+.footer-fn{
+    padding: 15px;
+    padding-top: 15px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background: rgb(66, 75, 244);
+    color: white;
+    position: fixed;
+    float: none;
+    bottom: 0px;
+    right: 0px;
+}
+
+.terms {
+    max-width: 800px;
+    padding: 40px;
+    margin: 0 auto;
+    min-width: 300px;
+    color:  rgb(66, 75, 244);
+}
+
+img.user{
+    position: fixed;
+    bottom: 50px;
+    left: 5px;
+    width: 40px;
+    z-index: 2;
+}
+
+img.info{
+    position: fixed;
+    bottom: 100px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+
+img.info2{
+    position: fixed;
+    bottom: 50px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+
+/* FOR SMARTPHONES */
+@media screen and (max-width: 420px) {
+
+    .footer{
+        /*font-size: 60%;*/
+    }
+    img.cross{
+        height: 25px;
+        width: 25px;
+        margin-left: -30px;
+    }
+}
+@media screen and (max-height: 380px) {
+
+    .footer{
+        display: none;
+    }
+
+}

@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
+}
+
+.wrap.address{
+    max-width: 900px;
+}
+
+.error_title{
+    display:none;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.title{
+    color: rgb(66, 75, 244);
+}
+
+.more-info{
+    float: right;
+}
+
+.more-info a{
+    font-size: 70%;
+    padding-left: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #424BF4;  
+}
+
+.textarea{
+    max-width: 100%;
+}
+
+
+.correct_register{
+    color: rgb(66, 75, 244);
+    text-align: center;
+}
+
+.link{
+    color: #303F9F;
+    line-break: normal;
+    font-size: 60%;
+    padding-left: 10%;
+}
+
+.form-content {
+    width: 100%;
+    color: #f2f2f2;
+    padding: 50px;
+    min-width: 320px;
+}
+.form-content .form {
+    width: 100%;
+    margin: auto;
+}
+.form-content .form .input-group {
+    position: relative;
+    margin-bottom: 32px;
+}
+.form-content .form .input-group input[type="text"],
+.form-content .form .input-group input[type="email"],
+.form-content .form .input-group input[type="password"] {
+    font-family: "Roboto", Arial;
+    font-size: 16px;
+    color: #303F9F;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #BBDEFB;
+}
+.form-content .form .input-group input[type="text"]:focus, .form-content .form .input-group input[type="text"]:active,
+.form-content .form .input-group input[type="email"]:focus,
+.form-content .form .input-group input[type="email"]:active,
+.form-content .form .input-group input[type="password"]:focus,
+.form-content .form .input-group input[type="password"]:active {
+    outline: none;
+    border-bottom: 2px solid #303F9F;
+}
+.form-content .form .input-group input[type="text"].error,
+.form-content .form .input-group input[type="email"].error,
+.form-content .form .input-group input[type="password"].error {
+    border-bottom: 2px solid #FF0000;
+}
+.form-content .form .input-group input[type="text"].error + label,
+.form-content .form .input-group input[type="email"].error + label,
+.form-content .form .input-group input[type="password"].error + label {
+    color: #FF0000;
+}
+.form-content .form .input-group label {
+    color: #303F9F;
+}
+.form-content .form .input-group label.label {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+.form-content .form .input-group label.label.active {
+    top: -12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #B6B6B6;
+}
+.form-content .form .input-group.checkbox label, .form-content .form .input-group.radio label {
+    display: inline-block;
+    cursor: pointer;
+    color: #303F9F;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.form-content .form .input-group.checkbox label:hover, .form-content .form .input-group.radio label:hover {
+    background: #bbdefb;
+}
+.form-content .form .input-group.checkbox label:before, .form-content .form .input-group.radio label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #303F9F;
+}
+.form-content .form .input-group.error label {
+    color: #D32F2F;
+}
+.form-content .form .input-group.error label:hover {
+    background: rgba(211, 47, 47, 0.2);
+}
+.form-content .form .input-group.error label:before {
+    border: 2px solid #D32F2F;
+}
+.form-content .form .input-group.radio input[type="radio"] {
+    display: none;
+}
+.form-content .form .input-group.radio input[type="radio"]:checked + label:before {
+    display: none;
+}
+.form-content .form .input-group.radio input[type="radio"]:checked + label {
+    padding: 5px 15px;
+    background: #303F9F;
+    border-radius: 2px;
+    color: #f2f2f2;
+}
+.form-content .form .input-group.checkbox label:before {
+    border-radius: 3px;
+}
+.form-content .form .input-group.checkbox input[type="checkbox"] {
+    display: none;
+}
+.form-content .form .input-group.checkbox input[type="checkbox"]:checked + label:before {
+    display: none;
+}
+.form-content .form .input-group.checkbox input[type="checkbox"]:checked + label {
+    background: #303F9F;
+    color: #f2f2f2;
+    padding: 5px 15px;
+}
+.form-content .form input[type="submit"] {
+    background: #303F9F;
+    border-radius: 1px;
+    border: 2px solid #f2f2f2;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto", Arial;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.form-content .form input[type="submit"]:hover {
+    background: #1976D2;
+}
+
+.login-wrap {
+    margin: 0 auto;
+    padding-top: 190px;
+}
+
+.btn-login {
+    padding-top: 170px;
+    min-width: 320px;
+    clear:both;
+    float:left;
+    overflow:hidden;
+    width:100%;
+}
+
+.head {
+    float:left;
+    left:50%;
+    list-style-type:none;
+    margin:0 auto;
+    padding:0;
+    position:relative;
+}
+
+.head ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.head ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.head li {
+    float:left;
+    position:relative;
+    right:50%;
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgb(66, 75, 244);
+    color: rgb(255,255,255);
+    padding: 10px 59px;
+    cursor: pointer;
+    font-weight: 300;
+    -webkit-transition: background-color .35s ease-in-out;
+    transition: background-color .35s ease-in-out;
+}
+
+.head li:hover, .head li.active{
+    background-color: #303F9F;
+}
+
+.head li:hover:active, .head li.active:active{
+    background-color: black;
+}
+
+@media screen and (max-width: 602px) {
+    .head li{
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .link{
+        padding-left: 40%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .btn-login{
+        padding-top: 210px;
+    }
+    .login-wrap{
+        padding-top: 230px;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    .link{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .head {
+        padding: 0px 0px 0px 10%; 
+    }
+
+    .head li{
+        list-style-type: none;
+        margin: 0px;
+        padding: 10px;
+        width: 80%;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .login-wrap {
+        padding-top: 300px;
+    }
+
+    .btn-login {
+        padding-top: 210px;
+    } 
+    .form-content .form .input-group label.label {
+        font-size: 80%;
+    }
+
+    .link{
+        font-size: 50%;
+    }
+}
